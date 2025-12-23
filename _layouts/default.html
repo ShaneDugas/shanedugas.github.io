@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+</head>
+<body>
+  <div class="site">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <div class="site-title">{{ site.title }}</div>
+        <div class="site-subtitle">{{ site.description }}</div>
+      </div>
+    </header>
+
+    <main class="site-content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <span>© {{ site.time | date: "%Y" }} · Built with Git, Markdown, and Jekyll.</span>
+    </footer>
+  </div>
+</body>
+</html>
+
