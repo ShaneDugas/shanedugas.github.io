@@ -63,6 +63,30 @@ body {
   font-size: 16px;
   color: #8AB09C;
   letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.site-nav {
+  margin-top: 16px;
+  display: flex;
+  gap: 20px;
+}
+
+.site-nav a {
+  color: #8AB09C;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.site-nav a:hover {
+  color: #D4D9DE;
+}
+
+.site-title a {
+  color: #D4D9DE;
+  text-decoration: none;
 }
 
 /* Content */
@@ -125,6 +149,22 @@ body {
 
 .post-header {
   margin-bottom: 16px;
+}
+
+.post-nav {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.post-nav a {
+  color: #8AB09C;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.post-nav a:hover {
+  color: #D4D9DE;
 }
 
 .post-body {

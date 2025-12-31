@@ -11,8 +11,15 @@
   <div class="site">
     <header class="site-header">
       <div class="site-header-inner">
-        <div class="site-title">{{ site.title }}</div>
+        <div class="site-title"><a href="{{ "/" | relative_url }}">{{ site.title }}</a></div>
         <div class="site-subtitle">{{ site.description }}</div>
+        {% if site.nav %}
+        <nav class="site-nav">
+          {% for item in site.nav %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% endfor %}
+        </nav>
+        {% endif %}
       </div>
     </header>
 
