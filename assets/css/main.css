@@ -1,0 +1,264 @@
+/* Deep Stream Patina Palette
+   Carbon Slate:     #363B42
+   Abyssal Blue:     #4F667A
+   Oxidized Current: #6B9BA3
+   Cryo Moss:        #8AB09C
+   Lunar Concrete:   #D4D9DE
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #363B42 0%, #4F667A 50%, #363B42 100%);
+  color: #D4D9DE;
+  min-height: 100vh;
+}
+
+.site {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+/* Header */
+
+.site-header {
+  background: linear-gradient(135deg, #363B42 0%, #4F667A 100%);
+  border-radius: 12px;
+  padding: 40px 28px;
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.5);
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, #6B9BA3 25%, #8AB09C 50%, #6B9BA3 75%, transparent 100%);
+  opacity: 0.15;
+  filter: blur(30px);
+}
+
+.site-header-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.site-title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #D4D9DE;
+  margin-bottom: 8px;
+}
+
+.site-subtitle {
+  font-size: 16px;
+  color: #8AB09C;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.site-nav {
+  margin-top: 16px;
+  display: flex;
+  gap: 20px;
+}
+
+.site-nav a {
+  color: #8AB09C;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.site-nav a:hover {
+  color: #D4D9DE;
+}
+
+.site-title a {
+  color: #D4D9DE;
+  text-decoration: none;
+}
+
+/* Content */
+
+.site-content {
+  background: #363B42;
+  border-radius: 12px;
+  padding: 28px 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Posts list */
+
+.post-list {
+  list-style: none;
+}
+
+.post-list-item {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(107, 155, 163, 0.25);
+}
+
+.post-list-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.post-date {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6B9BA3;
+  margin-bottom: 6px;
+}
+
+.post-link {
+  color: #D4D9DE;
+  text-decoration: none;
+}
+
+.post-link:hover {
+  color: #8AB09C;
+}
+
+.post-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.post-excerpt {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.7;
+}
+
+/* Single post */
+
+.post-header {
+  margin-bottom: 16px;
+}
+
+.post-nav {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.post-nav a {
+  color: #8AB09C;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.post-nav a:hover {
+  color: #D4D9DE;
+}
+
+.post-body {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #D4D9DE;
+}
+
+.post-body p + p {
+  margin-top: 12px;
+}
+
+.post-body h1,
+.post-body h2,
+.post-body h3 {
+  color: #D4D9DE;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.post-body h1 {
+  font-size: 28px;
+}
+
+.post-body h2 {
+  font-size: 24px;
+}
+
+.post-body h3 {
+  font-size: 20px;
+}
+
+.post-body code {
+  background: rgba(107, 155, 163, 0.2);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: #8AB09C;
+}
+
+.post-body pre {
+  background: #2a2e34;
+  padding: 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.post-body pre code {
+  background: none;
+  padding: 0;
+  color: #D4D9DE;
+}
+
+.post-body blockquote {
+  border-left: 4px solid #6B9BA3;
+  padding-left: 16px;
+  margin: 16px 0;
+  color: #aaa;
+  font-style: italic;
+}
+
+.post-body ul,
+.post-body ol {
+  margin-left: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.post-body li {
+  margin-bottom: 6px;
+}
+
+/* Links */
+
+a {
+  color: #8AB09C;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6B9BA3;
+}
+
+.post-body a {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+.site-footer {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+}
+

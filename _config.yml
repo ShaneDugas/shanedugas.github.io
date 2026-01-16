@@ -1,0 +1,25 @@
+title: "Deep Streams"
+description: "Tracking progress, documenting growth."
+baseurl: "" # leave empty for root
+url: "https://shanedugas.github.io"
+
+theme: null
+markdown: kramdown
+
+# Simple navigation (optional)
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+
+# Collections / defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: "Your Name"
+      permalink: /:year/:month/:day/:title/
+
