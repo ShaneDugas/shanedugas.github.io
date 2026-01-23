@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Turning Your Obsidian Vault Into a Searchable Semantic Memory System"
+date: 2026-01-23
+---
+
 # Turning Your Obsidian Vault Into a Searchable Semantic Memory System
 
 **The Problem**
