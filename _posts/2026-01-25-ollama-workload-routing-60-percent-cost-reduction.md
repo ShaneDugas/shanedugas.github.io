@@ -14,13 +14,11 @@ The challenge has been distributing workload to the Ollama server in a way that 
 For instance, with Claude code, once you exhaust your allotment of tokens, you can't use the model at all, not even to redirect to an Ollama model. But if we're strategic and intentional about distributing that workload throughout the current session cycle, we can greatly extend some of the work over that given period of time.
 
 The following is just one example of token savings that has proven to be repeatable. One of the problems, however, is actually letting Claude decide what tasks it's going to send to a ollama. It uses "deterministic tasks" as the reasoning factor for sending it workload, but I fear that some of the other tasks can be sent there as well.
-
 ---
 
 # Cutting LLM Costs by 60% with Local Model Routing: The Ollama Workload Distribution System
 
 **Problem:** I was spending ~120K tokens on parallel skill migrations that my local Ollama instance could handle perfectly. Same work, cloud costs, when I already had the hardware.
-
 **Solution:** Build a routing system that automatically directs deterministic tasks to Ollama and reserves Claude for work that actually needs it.
 
 **Result:** 60% cost reduction (48K tokens vs. 120K) on the same workload, with proof in production commits.

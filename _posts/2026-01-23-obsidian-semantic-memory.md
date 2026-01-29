@@ -113,7 +113,7 @@ This runs entirely locally. Ollama (my local LLM) extracts memories. PostgreSQL 
 
 The core script:
 
-1. **Scans vault** for all markdown files (1238 found)
+1. **Scans vault** for all markdown files 
 2. **Loads checkpoint** to see what's already been processed
 3. **Processes in batches** of 50 files per cron cycle
 4. **Rate limits** requests to Ollama (0.5 second delay between files)
